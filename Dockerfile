@@ -1,4 +1,5 @@
 FROM node:5.9.1
+MAINTAINER Thomas Lackemann <tommylackemann@gmail.com>
 
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' >> /etc/apt/sources.list.d/pgdg.list
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -

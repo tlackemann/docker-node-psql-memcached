@@ -6,4 +6,5 @@ RUN apt-get update
 RUN apt-get install -y postgresql-9.4 postgresql-client-9.4
 RUN apt-get install -y memcached
 RUN apt-get install -y sudo
-RUN service postgresql start && sudo -u postgres psql -c "CREATE USER test WITH PASSWORD 'test'"
+RUN service postgresql start && \
+  sudo -u postgres psql -c "CREATE USER test WITH PASSWORD 'test' CREATEUSER"

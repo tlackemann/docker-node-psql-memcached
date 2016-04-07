@@ -1,4 +1,4 @@
-FROM node:5.9.1
+FROM node:4.4.2-slim
 MAINTAINER Thomas Lackemann <tommylackemann@gmail.com>
 
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' >> /etc/apt/sources.list.d/pgdg.list
